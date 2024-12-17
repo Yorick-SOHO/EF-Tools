@@ -287,7 +287,7 @@ class CopyViewTemplate(my_WPF):
                                                    Transform.Identity,
                                                    copy_opts)
 
-            # ASSIGN VIEWTEMLATE TO VIEWS THAT HAD SAME VIEWTEMPLATE NAME
+            # ASSIGN VIEWTEMPLATE TO VIEWS THAT HAD SAME VIEWTEMPLATE NAME
             if self.UI_check_override.IsChecked:
                 with ef_Transaction(self.doc_to,'Assign ViewTemplates', debug=True):
                     self.assign_viewtemplates(dict_deleted_view_templates_doc_to)
